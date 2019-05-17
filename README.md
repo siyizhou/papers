@@ -6,4 +6,5 @@ https://www.zhihu.com/search?type=content&q=attention%20is%20all%20you%20need
 
 # transformer解释加代码
 https://www.jianshu.com/p/b1030350aadb<br>
-https://blog.csdn.net/mijiaoxiaosan/article/details/74909076
+https://blog.csdn.net/mijiaoxiaosan/article/details/74909076<br>
+github上开源代码：https://github.com/Kyubyong/transformer
