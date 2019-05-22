@@ -11,3 +11,6 @@
 我们证明了从判别的speaker encoder网络中学到的说话者信息可以转换到的multi-tts任务中，并且可以合成训练时unseen的说话者语音。<br>
 我们在各种大的、多样化的数据集上训练speaker encoder网络以获得最好的泛化性能。<br>
 最后，我们展示了随机采样的speaker embeddings可以在合成中生成和训练时不一样的语音，说明模型已经学到了说话者的特征。<br>
+
+# 核心思想
+单独加入speaker verification网络，生成speaker embedding，然后送入生成网络。
