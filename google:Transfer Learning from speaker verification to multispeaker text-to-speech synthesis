@@ -1,0 +1,13 @@
+# Transfer Learning from speaker verification to multispeaker text-to-speech synthesis
+单位：google<br>
+论文：https://arxiv.org/pdf/1806.04558.pdf<br>
+解读:https://blog.csdn.net/qq_40168949/article/details/88424878
+
+# 内容
+一个TTS的神经网络，可以生成多个speaker的语音，包括在train的时候没有见过的。系统包括三个独立训练的部分：<br>
+（1）a speaker encoder net: 在数千个说话者的带噪数据集上训练的，不需要文本数据，可以从几秒的语音中生成一个embedding vector<br>
+（2）一个基于tactron2的seq2seq synthesis net : 在speaker embedding的基础上从文本生层梅尔谱<br>
+（3）一个基于wavenet的自回归的声码器：可以将梅尔谱转成时域信号<br>
+我们证明了从判别的speaker encoder网络中学到的说话者信息可以转换到的multi-tts任务中，并且可以合成训练时unseen的说话者语音。<br>
+我们在各种大的、多样化的数据集上训练speaker encoder网络以获得最好的泛化性能。<br>
+最后，我们展示了随机采样的speaker embeddings可以在合成中生成和训练时不一样的语音，说明模型已经学到了说话者的特征。<br>
